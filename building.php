@@ -117,10 +117,11 @@ body {
 <div class="topnav">
   <a class="active" href="#home">Home</a>
   <a href="#room">Room</a>
-  <a href="#Electric-Water">Electric-Water</a>
+  <a href="add_residents_b.php">Electric-Water</a> <!-- Set the href to "add_residents_a.php" -->
   <a href="#contract">Contract</a>
   <a href="#contact">Contact</a>
 </div>
+
 
 <div class="row">
   <div class="column">
@@ -134,7 +135,32 @@ body {
         <p>TV 1 เครื่อง</p>
         <p a class="money">1200 บาท</p>
         
-        <p><button class="button">จอง</button></p>
+        <!-- Your existing HTML code -->
+
+<div class="row">
+  <!-- Your room card elements as shown in your previous code -->
+
+  <div class="column">
+    <div class="card">
+      <!-- Your room card details -->
+      <p><button class="button" onclick="reserveRoom('A101')">จอง</button></p>
+    </div>
+  </div>
+
+  <!-- More room cards -->
+
+</div>
+
+<!-- Your existing HTML code -->
+
+<script>
+// JavaScript function to handle room reservation
+function reserveRoom(roomNumber) {
+  // Assuming you want to redirect to the "room.php" page
+  window.location.href = 'room.php?room=' + roomNumber;
+}
+</script>
+
       </div>
     </div>
   </div>
@@ -149,7 +175,32 @@ body {
         <p>TV 1 เครื่อง</p>
         <p class="money">1200 บาท</p>
         
-        <p><button class="button">จอง</button></p>
+        <!-- Your existing HTML code -->
+
+<div class="row">
+  <!-- Your room card elements as shown in your previous code -->
+
+  <div class="column">
+    <div class="card">
+      <!-- Your room card details -->
+      <p><button class="button" onclick="reserveRoom('A101')">จอง</button></p>
+    </div>
+  </div>
+
+  <!-- More room cards -->
+
+</div>
+
+<!-- Your existing HTML code -->
+
+<script>
+// JavaScript function to handle room reservation
+function reserveRoom(roomNumber) {
+  // Assuming you want to redirect to the "room.php" page
+  window.location.href = 'room.php?room=' + roomNumber;
+}
+</script>
+
       </div>
     </div>
   </div>
@@ -165,7 +216,32 @@ body {
         <p>TV 1 เครื่อง</p>
         <p class="money">1200 บาท</p>
         
-        <p><button class="button">จอง</button></p>
+        <!-- Your existing HTML code -->
+
+<div class="row">
+  <!-- Your room card elements as shown in your previous code -->
+
+  <div class="column">
+    <div class="card">
+      <!-- Your room card details -->
+      <p><button class="button" onclick="reserveRoom('A101')">จอง</button></p>
+    </div>
+  </div>
+
+  <!-- More room cards -->
+
+</div>
+
+<!-- Your existing HTML code -->
+
+<script>
+// JavaScript function to handle room reservation
+function reserveRoom(roomNumber) {
+  // Assuming you want to redirect to the "room.php" page
+  window.location.href = 'room.php?room=' + roomNumber;
+}
+</script>
+
       </div>
     </div>
   </div>
@@ -180,7 +256,32 @@ body {
         <p>TV 1 เครื่อง</p>
         <p class="money">1200 บาท</p>
         
-        <p><button class="button">จอง</button></p>
+        <!-- Your existing HTML code -->
+
+<div class="row">
+  <!-- Your room card elements as shown in your previous code -->
+
+  <div class="column">
+    <div class="card">
+      <!-- Your room card details -->
+      <p><button class="button" onclick="reserveRoom('A101')">จอง</button></p>
+    </div>
+  </div>
+
+  <!-- More room cards -->
+
+</div>
+
+<!-- Your existing HTML code -->
+
+<script>
+// JavaScript function to handle room reservation
+function reserveRoom(roomNumber) {
+  // Assuming you want to redirect to the "room.php" page
+  window.location.href = 'room.php?room=' + roomNumber;
+}
+</script>
+
       </div>
     </div>
   </div>
@@ -195,7 +296,32 @@ body {
         <p>TV 1 เครื่อง</p>
         <p class="money">1200 บาท</p>
         
-        <p><button class="button">จอง</button></p>
+        <!-- Your existing HTML code -->
+
+<div class="row">
+  <!-- Your room card elements as shown in your previous code -->
+
+  <div class="column">
+    <div class="card">
+      <!-- Your room card details -->
+      <p><button class="button" onclick="reserveRoom('A101')">จอง</button></p>
+    </div>
+  </div>
+
+  <!-- More room cards -->
+
+</div>
+
+<!-- Your existing HTML code -->
+
+<script>
+// JavaScript function to handle room reservation
+function reserveRoom(roomNumber) {
+  // Assuming you want to redirect to the "room.php" page
+  window.location.href = 'room.php?room=' + roomNumber;
+}
+</script>
+
       </div>
     </div>
   </div>
@@ -211,7 +337,32 @@ body {
         <p>TV 1 เครื่อง</p>
         <p class="money">1200 บาท</p>
         
-        <p><button class="button">จอง</button></p>
+        <!-- Your existing HTML code -->
+
+<div class="row">
+  <!-- Your room card elements as shown in your previous code -->
+
+  <div class="column">
+    <div class="card">
+      <!-- Your room card details -->
+      <p><button class="button" onclick="reserveRoom('A101')">จอง</button></p>
+    </div>
+  </div>
+
+  <!-- More room cards -->
+
+</div>
+
+<!-- Your existing HTML code -->
+
+<script>
+// JavaScript function to handle room reservation
+function reserveRoom(roomNumber) {
+  // Assuming you want to redirect to the "room.php" page
+  window.location.href = 'room.php?room=' + roomNumber;
+}
+</script>
+
       </div>
     </div>
   </div>
@@ -226,7 +377,32 @@ body {
         <p>TV 1 เครื่อง</p>
         <p class="money">1200 บาท</p>
         
-        <p><button class="button">จอง</button></p>
+        <!-- Your existing HTML code -->
+
+<div class="row">
+  <!-- Your room card elements as shown in your previous code -->
+
+  <div class="column">
+    <div class="card">
+      <!-- Your room card details -->
+      <p><button class="button" onclick="reserveRoom('A101')">จอง</button></p>
+    </div>
+  </div>
+
+  <!-- More room cards -->
+
+</div>
+
+<!-- Your existing HTML code -->
+
+<script>
+// JavaScript function to handle room reservation
+function reserveRoom(roomNumber) {
+  // Assuming you want to redirect to the "room.php" page
+  window.location.href = 'room.php?room=' + roomNumber;
+}
+</script>
+
       </div>
     </div>
   </div>
@@ -240,7 +416,32 @@ body {
         <p>เครื่องทำน้ำอุ่น 1 เครื่อง</p>
         <p>TV 1 เครื่อง</p>
         <p class="money">1200 บาท</p>
-        <p><button class="button">จอง</button></p>
+        <!-- Your existing HTML code -->
+
+<div class="row">
+  <!-- Your room card elements as shown in your previous code -->
+
+  <div class="column">
+    <div class="card">
+      <!-- Your room card details -->
+      <p><button class="button" onclick="reserveRoom('A101')">จอง</button></p>
+    </div>
+  </div>
+
+  <!-- More room cards -->
+
+</div>
+
+<!-- Your existing HTML code -->
+
+<script>
+// JavaScript function to handle room reservation
+function reserveRoom(roomNumber) {
+  // Assuming you want to redirect to the "room.php" page
+  window.location.href = 'room.php?room=' + roomNumber;
+}
+</script>
+
       </div>
     </div>
   </div>
@@ -254,7 +455,32 @@ body {
         <p>เครื่องทำน้ำอุ่น 1 เครื่อง</p>
         <p>TV 1 เครื่อง</p>
         <p class="money">1200 บาท</p>
-        <p><button class="button">จอง</button></p>
+        <!-- Your existing HTML code -->
+
+<div class="row">
+  <!-- Your room card elements as shown in your previous code -->
+
+  <div class="column">
+    <div class="card">
+      <!-- Your room card details -->
+      <p><button class="button" onclick="reserveRoom('A101')">จอง</button></p>
+    </div>
+  </div>
+
+  <!-- More room cards -->
+
+</div>
+
+<!-- Your existing HTML code -->
+
+<script>
+// JavaScript function to handle room reservation
+function reserveRoom(roomNumber) {
+  // Assuming you want to redirect to the "room.php" page
+  window.location.href = 'room.php?room=' + roomNumber;
+}
+</script>
+
       </div>
     </div>
   </div>
@@ -268,7 +494,32 @@ body {
         <p>เครื่องทำน้ำอุ่น 1 เครื่อง</p>
         <p>TV 1 เครื่อง</p>
         <p class="money">1200 บาท</p>
-        <p><button class="button">จอง</button></p>
+        <!-- Your existing HTML code -->
+
+<div class="row">
+  <!-- Your room card elements as shown in your previous code -->
+
+  <div class="column">
+    <div class="card">
+      <!-- Your room card details -->
+      <p><button class="button" onclick="reserveRoom('A101')">จอง</button></p>
+    </div>
+  </div>
+
+  <!-- More room cards -->
+
+</div>
+
+<!-- Your existing HTML code -->
+
+<script>
+// JavaScript function to handle room reservation
+function reserveRoom(roomNumber) {
+  // Assuming you want to redirect to the "room.php" page
+  window.location.href = 'room.php?room=' + roomNumber;
+}
+</script>
+
       </div>
     </div>
   </div>
@@ -282,7 +533,32 @@ body {
         <p>เครื่องทำน้ำอุ่น 1 เครื่อง</p>
         <p>TV 1 เครื่อง</p>
         <p class="money">1200 บาท</p>
-        <p><button class="button">จอง</button></p>
+        <!-- Your existing HTML code -->
+
+<div class="row">
+  <!-- Your room card elements as shown in your previous code -->
+
+  <div class="column">
+    <div class="card">
+      <!-- Your room card details -->
+      <p><button class="button" onclick="reserveRoom('A101')">จอง</button></p>
+    </div>
+  </div>
+
+  <!-- More room cards -->
+
+</div>
+
+<!-- Your existing HTML code -->
+
+<script>
+// JavaScript function to handle room reservation
+function reserveRoom(roomNumber) {
+  // Assuming you want to redirect to the "room.php" page
+  window.location.href = 'room.php?room=' + roomNumber;
+}
+</script>
+
       </div>
     </div>
   </div>
@@ -296,7 +572,32 @@ body {
         <p>เครื่องทำน้ำอุ่น 1 เครื่อง</p>
         <p>TV 1 เครื่อง</p>
         <p class="money">1200 บาท</p>
-        <p><button class="button">จอง</button></p>
+        <!-- Your existing HTML code -->
+
+<div class="row">
+  <!-- Your room card elements as shown in your previous code -->
+
+  <div class="column">
+    <div class="card">
+      <!-- Your room card details -->
+      <p><button class="button" onclick="reserveRoom('A101')">จอง</button></p>
+    </div>
+  </div>
+
+  <!-- More room cards -->
+
+</div>
+
+<!-- Your existing HTML code -->
+
+<script>
+// JavaScript function to handle room reservation
+function reserveRoom(roomNumber) {
+  // Assuming you want to redirect to the "room.php" page
+  window.location.href = 'room.php?room=' + roomNumber;
+}
+</script>
+
       </div>
     </div>
   </div>
@@ -310,7 +611,32 @@ body {
         <p>เครื่องทำน้ำอุ่น 1 เครื่อง</p>
         <p>TV 1 เครื่อง</p>
         <p class="money">1200 บาท</p>
-        <p><button class="button">จอง</button></p>
+        <!-- Your existing HTML code -->
+
+<div class="row">
+  <!-- Your room card elements as shown in your previous code -->
+
+  <div class="column">
+    <div class="card">
+      <!-- Your room card details -->
+      <p><button class="button" onclick="reserveRoom('A101')">จอง</button></p>
+    </div>
+  </div>
+
+  <!-- More room cards -->
+
+</div>
+
+<!-- Your existing HTML code -->
+
+<script>
+// JavaScript function to handle room reservation
+function reserveRoom(roomNumber) {
+  // Assuming you want to redirect to the "room.php" page
+  window.location.href = 'room.php?room=' + roomNumber;
+}
+</script>
+
       </div>
     </div>
   </div>
@@ -324,7 +650,32 @@ body {
         <p>เครื่องทำน้ำอุ่น 1 เครื่อง</p>
         <p>TV 1 เครื่อง</p>
         <p class="money">1200 บาท</p>
-        <p><button class="button">จอง</button></p>
+        <!-- Your existing HTML code -->
+
+<div class="row">
+  <!-- Your room card elements as shown in your previous code -->
+
+  <div class="column">
+    <div class="card">
+      <!-- Your room card details -->
+      <p><button class="button" onclick="reserveRoom('A101')">จอง</button></p>
+    </div>
+  </div>
+
+  <!-- More room cards -->
+
+</div>
+
+<!-- Your existing HTML code -->
+
+<script>
+// JavaScript function to handle room reservation
+function reserveRoom(roomNumber) {
+  // Assuming you want to redirect to the "room.php" page
+  window.location.href = 'room.php?room=' + roomNumber;
+}
+</script>
+
       </div>
     </div>
   </div>
@@ -338,7 +689,32 @@ body {
         <p>เครื่องทำน้ำอุ่น 1 เครื่อง</p>
         <p>TV 1 เครื่อง</p>
         <p class="money">1200 บาท</p>
-        <p><button class="button">จอง</button></p>
+        <!-- Your existing HTML code -->
+
+<div class="row">
+  <!-- Your room card elements as shown in your previous code -->
+
+  <div class="column">
+    <div class="card">
+      <!-- Your room card details -->
+      <p><button class="button" onclick="reserveRoom('A101')">จอง</button></p>
+    </div>
+  </div>
+
+  <!-- More room cards -->
+
+</div>
+
+<!-- Your existing HTML code -->
+
+<script>
+// JavaScript function to handle room reservation
+function reserveRoom(roomNumber) {
+  // Assuming you want to redirect to the "room.php" page
+  window.location.href = 'room.php?room=' + roomNumber;
+}
+</script>
+
       </div>
     </div>
   </div>

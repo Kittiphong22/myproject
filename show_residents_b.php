@@ -2,6 +2,10 @@
 require("connect_db.php");
 $sql = "SELECT * FROM residents_b";
 $result = mysqli_query($conn, $sql);
+
+if (!$result) {
+    die("Error: " . mysqli_error($conn));
+}
 $homeUrl = "building.php";
 
 echo '<div class="container-fluid my-5"> <!-- ใช้ container-fluid แทน container เพื่อทำให้กว้างขึ้น -->
