@@ -1,7 +1,7 @@
 <?php
 require("connect_db.php");
 $เลขห้อง = $_GET["เลขห้อง"];
-$sql = "SELECT * FROM residents_a WHERE เลขห้อง = "$เลขห้อง"";
+$sql = "SELECT * FROM residents_a WHERE เลขห้อง = '$เลขห้อง'";
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_assoc($result);
 ?>

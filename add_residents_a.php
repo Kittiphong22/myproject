@@ -72,7 +72,8 @@
             <table>
                
                 <tr>
-                    <td>เลขห้อง:</td><td><input type="text" name="เลขห้อง" value="<?php echo $row["เลขห้อง"];?>" readonly /></td>
+                    <td>เลขห้อง:</td>
+                    <td><input type="text" name="เลขห้อง" /></td>
                 </tr>
                 <tr>
                     <td>ชื่อผู้อยู่:</td>
@@ -100,8 +101,8 @@
                     <td>ราคาห้อง:</td>
                     <td>
                     <select name="ราคาห้อง">
-                            <option value="1800">1800</option>
-                            <option value="2000">2000</option>               
+                            <option value="2000">2000</option>
+                            <option value="2500">2500</option>               
                         </select
                     </td>
                 </tr>

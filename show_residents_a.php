@@ -49,35 +49,46 @@ if ($result) { // Check if the query was executed successfully
     </style>";
     echo "<table>";
     echo "<tr>
-
-        <th>เลขห้อง</th>
-        <th>ชื่อผู้อยู่</th>
-        <th>ที่อยู่</th>
-        <th>เบอร์โทร</th>
-        <th>เริ่มต้นสัญญา</th>
-        <th>สิ้นสุดสัญญา</th>
-        <th>ราคาห้อง</th>
-        <th></th>
-    </tr>";
-
-    while ($row = mysqli_fetch_assoc($result)) {
-        echo "<tr>
-
-            <td>" . $row["เลขห้อง"] . "</td>
-            <td>" . $row["ชื่อผู้อยู่"] . "</td>
-            <td>" . $row["ที่อยู่"] . "</td>
-            <td>" . $row["เบอร์โทร"] . "</td>
-            <td>" . $row["start_contract"] . "</td>
-            <td>" . $row["end_of_contract"] . "</td>
-            <td>" . $row["ราคาห้อง"] . "</td>
-            <td>
-                <center><a href='edit_residents_a.php?เลขห้อง=" . $row["เลขห้อง"] . "' class='btn btn-primary'><i class='bi bi-pencil'></i> Edit</a>
-                <a href='eletric.php?เลขห้อง=" . $row["เลขห้อง"] . "' class='btn btn-danger'><i class='bi bi-trash'></i> Eletric</a>
-                </center>
-                </td>
+            <th>เลขห้อง</th>
+            <th>ชื่อผู้อยู่</th>
+            <th>ที่อยู่</th>
+            <th>เบอร์โทร</th>
+            <th>เริ่มต้นสัญญา</th>
+            <th>สิ้นสุดสัญญา</th>
+            <th>ราคาห้อง</th>
+            <th>ค่าน้ำค่าไฟ</th>
+            <th></th>
         </tr>";
+    
+    while ($row = mysqli_fetch_assoc($result)) {
+      echo "<tr>
+      <td>" . $row["เลขห้อง"] . "</td>
+      <td>" . $row["ชื่อผู้อยู่"] . "</td>
+      <td>" . $row["ที่อยู่"] . "</td>
+      <td>" . $row["เบอร์โทร"] . "</td>
+      <td>" . $row["start_contract"] . "</td>
+      <td>" . $row["end_of_contract"] . "</td>
+      <td>" . $row["ราคาห้อง"] . "</td>
+      <td>" . $row["ค่าน้ำค่าไฟ"] . "</td>
+      <td>
+          <center>
+          <a href='eletric.php?เลขห้อง=" . $row["เลขห้อง"] . "' class='btn btn-success'>
+    <i class='bi bi-lightning'></i> ค่าน้ำค่าไฟ
+</a>
+
+              <a href='edit_residents_a.php?เลขห้อง=" . $row["เลขห้อง"] . "' class='btn btn-primary'>
+                  <i class='bi bi-pencil'></i> แก้ไข
+              </a>
+              <a href='delete_residents_a.php?เลขห้อง=" . $row["เลขห้อง"] . "' class='btn btn-danger'>
+                  <i class='bi bi-trash'></i> ลบ
+              </a>
+          </center>
+      </td>
+  </tr>";
+  
     }
     echo "</table>";
+    
 } else {
     // Handle the query execution error
     echo "Error: " . mysqli_error($conn);
