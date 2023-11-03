@@ -1,21 +1,24 @@
 <?php
-echo '<div class="container-fluid my-5">
-<nav aria-label="breadcrumb" class="breadcrumb">
-<ol class="breadcrumb-chevron p-3 bg-body-tertiary rounded-3">
-  <li class="breadcrumb-item">
-    <a class="link-body-emphasis" href="building.php">
-      <svg class="bi" width="13" height="16"><use xlink:href="#house-door-fill"></use></svg>
-      <span class="visually-hidden">Home</span>
-    </a>
-  </li>
-  <li class="breadcrumb-item active" aria-current="page">
-    <a class="link-body-emphasis" href="show_residents_a.php">Show</a>
-  </li>
-</ol>
-</nav>
-</div>';
+require("connect_db.php");
 
+// Check if the room number is set in the URL
+if (isset($_GET['เลขห้อง'])) {
+    $roomNumber = $_GET['เลขห้อง'];
 
+    // Query the database to get the room number based on the value passed in the URL
+    $query = "SELECT เลขห้อง FROM residents_a WHERE เลขห้อง = '$roomNumber'";
+    $result = mysqli_query($conn, $query);
+
+    if ($result) {
+        $row = mysqli_fetch_assoc($result);
+        $roomNumber = $row['เลขห้อง'];
+    } else {
+        // Handle the query execution error
+        echo "Error: " . mysqli_error($conn);
+    }
+} else {
+    $roomNumber = "No room selected"; // Default value
+}
 $waterCost = 100; // ค่าน้ำเหมาจ่ายต่อเดือน
 $electricityRate = 8; // ค่าไฟต่อหน่วย
 
@@ -94,14 +97,17 @@ $totalCost = $totalWaterCost + $electricityCost;
         <input type="submit" value="คำนวณ">
     </form>
     <center>
-    <h2>รายการค่าใช้จ่าย</h2>
-    <p>ค่าน้ำ: <?php echo $totalWaterCost; ?> บาท</p>
-    <p>ค่าไฟ: <?php echo $electricityCost; ?> บาท</p>
-    <p><strong>รวม: <?php echo $totalCost; ?> บาท</strong></p>
+        <h2>รายการค่าใช้จ่าย - ห้อง <?php echo $roomNumber; ?></h2>
+        <p>ค่าน้ำ: <?php echo $totalWaterCost; ?> บาท</p>
+        <p>ค่าไฟ: <?php echo $electricityCost; ?> บาท</p>
+        <p><strong>รวม: <?php echo $totalCost; ?> บาท</strong></p>
     </center>
 
-    <form method="get">
-    <input type="submit" name="print_button" value="print">
+    <form method="post" action="do_eletric.php">
+    <input type="hidden" name="roomNumber" value="<?php echo $roomNumber; ?>">
+    <input type="hidden" name="totalCost" value="<?php echo $totalCost; ?>">
+    <input type="submit" name="update_button" value="อัพเดต">
 </form>
+
 </body>
 </html>

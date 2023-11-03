@@ -1,3 +1,6 @@
+<?php
+require("connect_db.php");
+?>
 <html>
 <head>
     <title>Add Residents</title>
@@ -69,11 +72,10 @@
     <center>
         <h1>เพิ่มรายชื่อผู้เช่า</h1>
         <form action="do_add_residents_a.php" method="post">
-            <table>
-               
-                <tr>
-                    <td>เลขห้อง:</td>
-                    <td><input type="text" name="เลขห้อง" /></td>
+            <table>   
+            <tr>
+                <td>เลขห้อง:</td>
+                <td><input type="text" name="เลขห้อง" value="<?php echo $_GET['room'];?>"readonly /></td>
                 </tr>
                 <tr>
                     <td>ชื่อผู้อยู่:</td>
@@ -96,15 +98,6 @@
                 <td>สิ้นสุดสัญญา:</td>
                     <td><input type="date" name="end_of_contract">
                 </td>
-                </tr>
-                <tr>
-                    <td>ราคาห้อง:</td>
-                    <td>
-                    <select name="ราคาห้อง">
-                            <option value="2000">2000</option>
-                            <option value="2500">2500</option>               
-                        </select
-                    </td>
                 </tr>
                 <tr>
                     <td colspan="2" style="text-align:center;"><input type="submit" value="เพิ่มข้อมูล" /></td>

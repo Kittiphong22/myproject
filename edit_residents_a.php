@@ -95,6 +95,7 @@ if (isset($_GET["เลขห้อง"])) {
         <tr><td>ราคาห้อง:</td>
             <td>
                 <select name="ราคาห้อง">
+                    <option value="1800" <?php if ($row["ราคาห้อง"] == "1800") echo "selected"; ?>>1800</option>
                     <option value="2000" <?php if ($row["ราคาห้อง"] == "2000") echo "selected"; ?>>2000</option>
                     <option value="2500" <?php if ($row["ราคาห้อง"] == "2500") echo "selected"; ?>>2500</option>
                 </select>

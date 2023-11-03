@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $Password = $_POST["password"];
 
   // Check if the provided Username and Password match the expected values
-  if ($Username === "Username" && $Password === "1234567890") {
+  if ($Username === "Admin" && $Password === "0123456789") {
       // Successful login, redirect to the "building.php" page
       header("Location: building.php");
       exit;

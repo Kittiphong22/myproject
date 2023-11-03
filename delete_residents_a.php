@@ -62,7 +62,7 @@ $row = mysqli_fetch_assoc($result);
     </style>
     <body>        
         <center>
-            <h1>ลบรายชื่อผู้เช่า</h1>
+            <h1>คืนห้องเช่า</h1>
             <form action="do_delete_residents_a.php" method="post">
                 <table>
                     <tr><td>เลขห้อง:</td><td>
@@ -74,7 +74,8 @@ $row = mysqli_fetch_assoc($result);
                     <tr><td>เริ่มต้นสัญญา:</td><td><?php echo $row["start_contract"];?></td></tr>
                     <tr><td>สิ้นสุดสัญญา:</td><td><?php echo $row["end_of_contract"];?></td></tr>
                     <tr><td>ราคาห้อง:</td><td><?php echo $row["ราคาห้อง"];?></td></tr>
-                    <tr><td colspan="2" style="text-align:center;"><input type="submit" value="ลบ" /></td></tr>
+                    <tr><td>ราคาห้อง:</td><td><?php echo $row["ค่าน้ำค่าไฟ"];?></td></tr>
+                    <tr><td colspan="2" style="text-align:center;"><input type="submit" value="คืนห้อง" /></td></tr>
                 </table>
             </form>
         </center>

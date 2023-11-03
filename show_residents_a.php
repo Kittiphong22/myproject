@@ -29,7 +29,7 @@ if ($result) { // Check if the query was executed successfully
     echo "<style>
         table {
             border-collapse: collapse;
-            width: 80%;
+            width: 95%;
             margin: 20px auto;
         }
         th, td {
@@ -46,6 +46,14 @@ if ($result) { // Check if the query was executed successfully
           font-size: 25px;
           font-family: 'YourThaiFont', sans-serif;
       }
+      .button-container {
+        text-align: center;
+      }
+      .button-container a {
+        display: inline-block;
+        margin: 5px; /* Adjust the margin as needed */
+    }
+</style>
     </style>";
     echo "<table>";
     echo "<tr>
@@ -58,10 +66,11 @@ if ($result) { // Check if the query was executed successfully
             <th>ราคาห้อง</th>
             <th>ค่าน้ำค่าไฟ</th>
             <th></th>
+            <th></th>
         </tr>";
-    
+
     while ($row = mysqli_fetch_assoc($result)) {
-      echo "<tr>
+        echo "<tr>
       <td>" . $row["เลขห้อง"] . "</td>
       <td>" . $row["ชื่อผู้อยู่"] . "</td>
       <td>" . $row["ที่อยู่"] . "</td>
@@ -69,27 +78,26 @@ if ($result) { // Check if the query was executed successfully
       <td>" . $row["start_contract"] . "</td>
       <td>" . $row["end_of_contract"] . "</td>
       <td>" . $row["ราคาห้อง"] . "</td>
-      <td>" . $row["ค่าน้ำค่าไฟ"] . "</td>
-      <td>
-          <center>
-          <a href='eletric.php?เลขห้อง=" . $row["เลขห้อง"] . "' class='btn btn-success'>
-    <i class='bi bi-lightning'></i> ค่าน้ำค่าไฟ
-</a>
+      <td>" . $row["ค่าน้ำค่าไฟ"] ."</td>
 
-              <a href='edit_residents_a.php?เลขห้อง=" . $row["เลขห้อง"] . "' class='btn btn-primary'>
-                  <i class='bi bi-pencil'></i> แก้ไข
-              </a>
-              <a href='delete_residents_a.php?เลขห้อง=" . $row["เลขห้อง"] . "' class='btn btn-danger'>
-                  <i class='bi bi-trash'></i> ลบ
-              </a>
-          </center>
-      </td>
-  </tr>";
+      <td>
+      <center>
+          <a href='eletric.php?เลขห้อง=" . $row["เลขห้อง"] . "' class='btn btn-success'>
+              <i class='bi bi-lightning'></i> ค่าน้ำค่าไฟ</a>
+          </td>
+          <td>
+          <a href='edit_residents_a.php?เลขห้อง=" . $row["เลขห้อง"] . "' class='btn btn-primary'>
+              <i class='bi bi-pencil'></i> แก้ไข</a>
+           
+          <a href='delete_residents_a.php?เลขห้อง=" . $row["เลขห้อง"] . "' class='btn btn-danger'>
+              <i class='bi bi-trash'></i> คืนห้อง </a>
+      </center>
+  </td>
   
+  </tr>";
     }
     echo "</table>";
-    
-} else {
+  } else {
     // Handle the query execution error
     echo "Error: " . mysqli_error($conn);
 }
@@ -115,13 +123,9 @@ input[type="submit"] {
     </style>
 </head>
 <body>   
-    <center>
-    <form method="post" action="add_residents_a.php">
-        <!-- ปุ่ม submit -->
-        <input type="submit" name="submit_button" value="เพิ่มข้อมูลผู้อยู่" class="btn btn-primary">
-<i class="bi bi-person-add"></i>
-
-    </form>
+<center>
+    
     </center>
+</body>
 </body>
 </html>
